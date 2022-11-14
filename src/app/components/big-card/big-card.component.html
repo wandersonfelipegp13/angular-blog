@@ -1,18 +1,15 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <img src="https://source.unsplash.com/random/?news" alt="Main article" />
+    <img src="{{ photoCover }}" alt="Main article" />
   </div>
   <div class="big-card__title">
     <h1>
-      <a href="#"> Saiu a nova versão do Angular</a>
+      <a href="#">{{ cardTitle }}</a>
     </h1>
   </div>
   <div class="big-card__description">
     <p>
-      Mussum Ipsum, cacilds vidis litro abertis. Não sou faixa preta cumpadi,
-      sou preto inteiris, inteiris. Viva Forevis aptent taciti sociosqu ad
-      litora torquent. Aenean aliquam molestie leo, vitae iaculis nisl. Todo
-      mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!
+      {{ cardDescription }}
     </p>
   </div>
 </div>
