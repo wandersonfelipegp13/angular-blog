@@ -9,9 +9,9 @@
 }
 
 .small-card__photo {
-  width: 240px;
-  min-width: 240px;
-  height: 180px;
+  width: 160px;
+  min-width: 160px;
+  height: 160px;
   margin-right: 24px;
 }
 

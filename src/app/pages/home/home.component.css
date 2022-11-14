@@ -16,9 +16,9 @@ header {
 }
 
 .articles__main {
-  width: 50%;
+  width: 600px;
 }
 
 .articles__others {
-  width: 40%;
+  width: 500px;
 }
