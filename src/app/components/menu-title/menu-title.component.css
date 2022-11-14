@@ -1,0 +1,19 @@
+.container__menu-title {
+  color: #fff;
+}
+
+.container__menu-title > h1 {
+  margin: 16px 0px;
+
+  font-size: 160px;
+  font-weight: bold;
+  font-family: 'Ubuntu';
+  word-spacing: 32px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.container__menu-title hr {
+  margin: 16px 0;
+}
