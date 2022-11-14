@@ -15,3 +15,8 @@ body {
 a {
   text-decoration: none;
 }
+
+::selection {
+  background-color: #fff;
+  color: #111;
+}
