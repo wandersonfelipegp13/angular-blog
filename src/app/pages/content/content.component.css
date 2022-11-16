@@ -1,0 +1,48 @@
+.container__content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 32px;
+}
+
+.container__content > a {
+  width: 500px;
+  text-align: start;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.content__cover {
+  width: 500px;
+  min-width: 500px;
+  height: 300px;
+
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content__cover > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content__title {
+  margin-top: 16px;
+}
+
+.content__title > hr {
+  border: none;
+  border-top: 1px solid #333;
+}
+
+.content__description {
+  margin-top: 16px;
+}
+
+.content__description > p {
+  color: #888;
+}
