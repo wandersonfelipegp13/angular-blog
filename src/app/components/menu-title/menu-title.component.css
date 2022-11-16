@@ -16,4 +16,6 @@
 
 .container__menu-title hr {
   margin: 16px 0;
+  border: none;
+  border-top: 1px solid #333;
 }
