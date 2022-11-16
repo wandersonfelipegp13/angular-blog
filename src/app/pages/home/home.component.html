@@ -3,33 +3,20 @@
 <div class="container__articles">
   <div class="articles__main">
     <app-big-card
-      id="1"
-      photoCover="https://cdn.animenewsnetwork.com/thumbnails/max650x650/cms/news.5/191835/visual_07.webp"
-      date="11 de março, 2022"
-      cardTitle="Attack on Titan The Final Season Parte 3 Revela o Visual Principal"
-      cardDescription='"Attack on Titan The Final Season Special Event 2022" revelou o visual principal
-      para o anime Attack on Titan The Final Season Part 3 em Tóquio no domingo.
-      A terceira parte é anunciada como a “conclusão” da franquia de anime.'
+      id="{{ bigContent.id }}"
+      photoCover="{{ bigContent.photo }}"
+      date="{{ bigContent.date }}"
+      cardTitle="{{ bigContent.title }}"
+      cardDescription="{{ bigContent.description }}"
     ></app-big-card>
   </div>
   <div class="articles__others">
     <app-small-card
-      id="2"
-      photoCard="https://cdn.animenewsnetwork.com/thumbnails/max450x450/cms/news.5/188250/cyberpunk-edgerunners.jpg"
-      date="21 de abril, 2022"
-      titleCard="Cyberpunk: Edgerunners ganha RPG de mesa"
-    ></app-small-card>
-    <app-small-card
-      id="3"
-      photoCard="https://cdn.animenewsnetwork.com/thumbnails/max400x400/cms/news.5/186449/one-piece-film-red-visual.jpg"
-      date="09 de janeiro, 2022"
-      titleCard="One Piece Film Red Fatura Mais De £ 500.000 No Reino Unido e Na Irlanda"
-    ></app-small-card>
-    <app-small-card
-      id="4"
-      photoCard="https://cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.5/191848/miss-kobayashi-s-dragon-maid-s-season-2-15-blu-ray.jpg"
-      date="30 de agosto, 2022"
-      titleCard="Blu-ray Miss Kobayashi's Dragon Maid S é Lançado Na Segunda-feira"
+      *ngFor="let n of news"
+      id="{{ n.id }}"
+      photoCard="{{ n.photo }}"
+      date="{{ n.date }}"
+      titleCard="{{ n.title }}"
     ></app-small-card>
   </div>
 </div>

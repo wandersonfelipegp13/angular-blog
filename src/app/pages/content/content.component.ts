@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { fakeData } from 'src/app/data/fakeData';
+import { Data } from 'src/app/data/data';
 
 @Component({
   selector: 'app-content',
@@ -32,7 +32,7 @@ export class ContentComponent implements OnInit {
   }
 
   setValuesToComponent(id: string) {
-    const result = fakeData.filter((article) => article.id == id)[0];
+    const result = Data.filter((article) => article.id == id)[0];
 
     if (result) {
       this.contentTitle = result.title;
