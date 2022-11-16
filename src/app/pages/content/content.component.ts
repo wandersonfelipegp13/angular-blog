@@ -1,24 +1,43 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { fakeData } from 'src/app/data/fakeData';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  styleUrls: ['./content.component.css'],
 })
 export class ContentComponent implements OnInit {
+  private id: string | null = '0';
 
   @Input()
-  photoCover: string = 'https://source.unsplash.com/random/?news'
+  photoCover: string = 'https://source.unsplash.com/random/?news';
 
   @Input()
-  contentTitle: string = 'Título da Notícia'
+  contentTitle: string = 'Título da Notícia';
 
   @Input()
-  contentDescription: string = 'Content Description'
+  contentDescription: string = 'Content Description';
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe((value) => {
+      this.id = value.get('id');
+    });
+
+    if (this.id && this.id !== '0') {
+      this.setValuesToComponent(this.id);
+    }
   }
 
+  setValuesToComponent(id: string) {
+    const result = fakeData.filter((article) => article.id == id)[0];
+
+    if (result) {
+      this.contentTitle = result.title;
+      this.photoCover = result.photo;
+      this.contentDescription = result.description;
+    }
+  }
 }

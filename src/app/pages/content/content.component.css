@@ -32,15 +32,17 @@
 
 .content__title {
   margin-top: 16px;
+  width: 500px;
 }
 
 .content__title > hr {
   border: none;
-  border-top: 1px solid #333;
+  border-top: 2px solid #333;
 }
 
 .content__description {
-  margin-top: 16px;
+  margin-top: 32px;
+  width: 500px;
 }
 
 .content__description > p {
