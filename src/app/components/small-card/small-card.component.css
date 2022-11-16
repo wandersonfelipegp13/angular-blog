@@ -9,8 +9,8 @@
 }
 
 .small-card__photo {
-  width: 160px;
-  min-width: 160px;
+  width: 240px;
+  min-width: 240px;
   height: 160px;
   margin-right: 24px;
 }
@@ -21,17 +21,21 @@
   object-fit: cover;
 }
 
-.small-card__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.small-card__date p {
+  color: #555;
+  font-size: 12px;
 }
 
 .small-card__title a {
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .container__small-card__separator {
   margin-top: 16px;
+}
+
+.container__small-card__separator hr {
+  border: none;
+  border-top: 1px solid #333;
 }

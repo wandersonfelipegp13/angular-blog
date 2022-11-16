@@ -11,6 +11,9 @@ export class SmallCardComponent implements OnInit {
   photoCard: string = 'https://source.unsplash.com/random/?news'
 
   @Input()
+  date: string = 'Sem data de postagem'
+
+  @Input()
   titleCard: string = 'Card Description'
 
   constructor() { }
