@@ -15,6 +15,13 @@ body {
 a {
   text-decoration: none;
   color: #ddd;
+  transition: all .3s;
+  background-color: transparent;
+}
+
+a:hover {
+  filter: brightness(1.5) drop-shadow(8px 8px 16px red);
+  font-weight: bold;
 }
 
 ::selection {
