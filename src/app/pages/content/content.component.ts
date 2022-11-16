@@ -10,13 +10,12 @@ import { Data } from 'src/app/data/data';
 export class ContentComponent implements OnInit {
   private id: string | null = '0';
 
-  @Input()
   photoCover: string = 'https://source.unsplash.com/random/?news';
 
-  @Input()
   contentTitle: string = 'Título da Notícia';
 
-  @Input()
+  date: string = 'Sem data de postagem';
+
   contentDescription: string = 'Content Description';
 
   constructor(private route: ActivatedRoute) {}
@@ -36,6 +35,7 @@ export class ContentComponent implements OnInit {
 
     if (result) {
       this.contentTitle = result.title;
+      this.date = result.date;
       this.photoCover = result.photo;
       this.contentDescription = result.description;
     }

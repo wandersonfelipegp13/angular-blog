@@ -8,11 +8,22 @@
   margin-top: 32px;
 }
 
-.container__content > a {
+.content__nav-bar {
   width: 500px;
-  text-align: start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 16px;
+  align-items: center;
+}
+
+.content__nav-bar > a {
   font-weight: bold;
+}
+
+.content__nav-bar > p {
+  color: #555;
+  font-size: 12px;
 }
 
 .content__cover {
