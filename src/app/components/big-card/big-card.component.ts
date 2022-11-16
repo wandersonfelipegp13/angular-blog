@@ -11,6 +11,9 @@ export class BigCardComponent implements OnInit {
   photoCover: string = 'https://source.unsplash.com/random/?news';
 
   @Input()
+  date: string = 'Sem data de postagem'
+
+  @Input()
   cardTitle: string = 'Big News Title';
 
   @Input()

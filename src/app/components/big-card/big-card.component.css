@@ -18,6 +18,15 @@
   object-fit: cover;
 }
 
+.big-card__date {
+  margin-top: 16px;
+}
+
+.big-card__date p {
+  color: #555;
+  font-size: 12px;
+}
+
 .big-card__title > h1 {
   font-size: 22px;
   margin-top: 16px;
@@ -29,5 +38,5 @@
 
 .big-card__description {
   color: #BBB;
-  margin-top: 8px;
+  margin-top: 16px;
 }

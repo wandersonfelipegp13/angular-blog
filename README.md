@@ -1,6 +1,6 @@
 # Angular Blog
 
-Projeto de um blog construpido com Angular. Gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.2.7.
+Projeto de um blog construpido com Angular. Inspirado no design do [Dwinawan](https://dribbble.com/dwinawan) Gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.2.7.
 
 ## Servidor de Desenvolvimento
 
